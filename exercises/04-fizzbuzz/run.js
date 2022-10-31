@@ -6,7 +6,16 @@
  * Otherwise simply return the number
  */
 fizzBuzz = function (inputNumber) {
-  return 0;
+  let output = "";
+  if(!(inputNumber % 3)){
+    output += "Fizz";
+  }
+  if (!(inputNumber % 5)) {
+    output += "Buzz";
+  }
+  if (inputNumber % 3 != 0 && inputNumber %5 != 0)
+    output += inputNumber;
+  return output;
 };
 
 module.exports = { fizzBuzz };

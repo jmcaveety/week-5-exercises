@@ -4,6 +4,11 @@
  * use a simple for loop that checks the size of the array
  */
 forLoops = function (inputArray) {
+  let addSum = 0;
+  for(let i = 0; i<inputArray.length;i++){
+    addSum += inputArray[i];
+  }
+  return addSum;
 };
 
 /**
@@ -13,6 +18,7 @@ forLoops = function (inputArray) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
  */
 usingArrayReduce = function (inputArray) {
+  return inputArray.reduce((x, y) => x+y);
 };
 
 module.exports = {
